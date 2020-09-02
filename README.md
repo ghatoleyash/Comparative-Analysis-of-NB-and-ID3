@@ -11,7 +11,8 @@ Other objectives include:
 - To hyper-tune the model eventually, helping in better predictions
 
 ## Naive Bayes
-Naïve Bayes a statistical approach based on Bayesian Theory, which chooses the decision based on highest probability. Bayesian probability estimates unknown probabilities from known values. It also allows prior knowledge and logic to be applied to uncertain statements. This technique has an assumption of conditional independence among features in the data. The Naïve Bayes classifier is based on the conditional probabilities
+Naïve Bayes is a statistical approach based on Bayesian Theory, which chooses the decision based on highest probability. Bayesian probability estimates unknown probabilities from known values. It also allows prior knowledge and logic to be applied to uncertain statements. This technique has an assumption of conditional independence among features in the data. The Naïve Bayes classifier is based on the conditional probabilities
+
 
 #### Benefits
 
