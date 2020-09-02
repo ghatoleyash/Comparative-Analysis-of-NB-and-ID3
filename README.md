@@ -25,7 +25,7 @@ Iterative Dichotomiser 3 is the implementation based on the concept of Decision 
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/entropy_formula.png></div>
 Where, S is the current dataset changes with every iteration to the subset of previous data, c is the set of classes is S, Pi is the probability of being class c with total classes present in S
 - Information gain: It measures that which attribute in a given set of training feature vectors is useful to discriminate between two classes that needed to be learned which can be calculated by, 
-<div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/information_gain.png></div>
+<div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/information_gain_formula.png></div>
 Where, H(S) is the entropy of Set S, D is the subset created by spltting Set from attribute D, |V| is the number of elements of a particular class belonging to the attribute D, and |S| is the total number of elements in set S, H(V) is the entropy of subset V  
 #### Benefits
 
