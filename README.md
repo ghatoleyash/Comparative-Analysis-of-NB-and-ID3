@@ -11,8 +11,12 @@ Other objectives include:
 - To hyper-tune the model eventually, helping in better predictions
 
 ## Naive Bayes
-Naïve Bayes is a statistical approach based on Bayesian Theory, which chooses the decision based on highest probability. Bayesian probability estimates unknown probabilities from known values. It also allows prior knowledge and logic to be applied to uncertain statements. This technique has an assumption of conditional independence among features in the data. The Naïve Bayes classifier is based on the conditional probabilities.asdadadasdadad
+Naïve Bayes is a statistical approach based on Bayesian Theory, which chooses the decision based on highest probability. Bayesian probability estimates unknown probabilities from known values. It also allows prior knowledge and logic to be applied to uncertain statements. This technique has an assumption of conditional independence among features in the data. The Naïve Bayes classifier is based on the conditional probabilities.
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/Conditional_probability.png></div>
+where n represents maximum number of features (30), P(ci | fk) is probability of feature value fk being in class ci, P(fk | ci) is probability of generating feature value fk given class ci, P(ci) and P(fk) are probability of occurrence of class ci and probability of feature value fk occurring respectively. The classifier performs the binary classification based on Bayesian classification rule.
+<div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/Conditional_probability.png></div>
+Ci is the target class for classification where C1 is the negative class (non fraud cases) and C2 is the positive class (fraud cases).
+
 
 
 #### Benefits
