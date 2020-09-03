@@ -77,4 +77,8 @@ Where, column represented by predicted class and row is the true class
 - True negative rate for Naive Bayes and ID3 is 68% and 52% respectively
 
 ## References
-- 
+- Kotsiantis, S. B., Dimitris Kanellopoulos, and P. E. Pintelas. "Data preprocessing for supervised leaning." International Journal of Computer Science 1.2 (2006): 111-117.
+- Zibran, Minhaz Fahim. "Chi-squared test of independence." Department of Computer Science, University of Calgary, Alberta, Canada (2007).
+- Rish, Irina. "An empirical study of the naive Bayes classifier." IJCAI 2001 workshop on empirical methods in artificial intelligence. Vol. 3. No. 22. 2001.
+- Utgoff, Paul E. "ID5: an incremental ID3." Machine Learning Proceedings 1988. Morgan Kaufmann, 1988. 107-120.
+- Fan, Jerome, Suneel Upadhye, and Andrew Worster. "Understanding receiver operating characteristic (ROC) curves." Canadian Journal of Emergency Medicine 8.1 (2006): 19-20.
