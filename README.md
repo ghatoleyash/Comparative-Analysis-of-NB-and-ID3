@@ -38,7 +38,7 @@ Where, S is the current dataset changes with every iteration to the subset of pr
 Where, H(S) is the entropy of Set S, D is the subset created by spltting Set from attribute D, |V| is the number of elements of a particular class belonging to the attribute D, and |S| is the total number of elements in set S, H(V) is the entropy of subset V
 
 #### Parameters to tune
-These parameters help in reduing the overfit of the algorithm. Generality of the algorithm is maintained by restricting the growth of the tree. 
+The parameters given below helps algorithm to reduce the problem of overfitting the training dataset. Generality of the algorithm is maintained by restricting the growth of the tree. 
 - min_samples_split: Total number of examples required to split the node further or minimum number required where information gain for attributes on the subset is calculated 
 - max_depth: The maximum depth of tree that can be achieved by default the decision tree splits until every instances of that subset is of one class in other words they are pure or till the leaf node contains minimum samples required to split  
 - max_features: Number of attributes to consider while calculating the information gain on the given subset of data
