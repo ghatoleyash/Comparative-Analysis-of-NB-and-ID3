@@ -42,7 +42,7 @@ Selecting the relevant categorical features can be done using the chi-square tes
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/contingency_table.png></div>
 Where, map category corresponds to categories in independent variable, and reference category is the dependent variable
 Using the table, chi-square value is calculated with the help of observed and expected outcome and can be given as:
-<div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/chi_square_formula.jpeg></div>
+<div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/chi_square_formula.jpg></div>
 Where, Oi is the observed outcome and Ei is the expected value, i is the segment for each of the cell in contingency table
 The chi-square value obtained and using the degree of freedom, p-value is received which further can be compared with the significance value. If the p-value is greater than significance level then there exist no relation between dependent and independent variable, where the variable can be removed else, we have to keep the variable.  
 
