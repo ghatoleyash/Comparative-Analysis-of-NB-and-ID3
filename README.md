@@ -18,9 +18,11 @@ Where, n represents maximum number of features (30), P(ci | fk) is probability o
 The classifier performs the binary classification based on Bayesian classification rule.
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/class_probability.png></div>
 Ci is the target class for classification where C1 is the negative class (non fraud cases) and C2 is the positive class (fraud cases).
+
 #### Parameters to tune
-- Laplace Smoothing
+- Laplace Smoothing: There can be cases where a count of values attained by attribute with respect to a class variable can be zero. This leads to conditional probability to infinity hence, there is a need of parameter which can handle such end cases.
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/laplace_smoothing_formula.png></div>
+Where, k is the laplace smoothing, |X| is the total number of classes, c(x,y) is the conditional probability of x dependent on y, c(y) is the marginal probability 
 
 
 
@@ -33,7 +35,14 @@ Where, S is the current dataset changes with every iteration to the subset of pr
 
 - Information Gain: It measures that which attribute in a given set of training feature vectors is useful to discriminate between two classes that needed to be learned which can be calculated by, 
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/information_gain_formula.png></div>
-Where, H(S) is the entropy of Set S, D is the subset created by spltting Set from attribute D, |V| is the number of elements of a particular class belonging to the attribute D, and |S| is the total number of elements in set S, H(V) is the entropy of subset V  
+Where, H(S) is the entropy of Set S, D is the subset created by spltting Set from attribute D, |V| is the number of elements of a particular class belonging to the attribute D, and |S| is the total number of elements in set S, H(V) is the entropy of subset V
+
+#### Parameters to tune
+These parameters help in reduing the overfit of the algorithm. Generality of the algorithm is maintained by restricting the growth of the tree. 
+- min_samples_split: Total number of examples required to split the node further or minimum number required where information gain for attributes on the subset is calculated 
+- max_depth: The maximum depth of tree that can be achieved by default the decision tree splits until every instances of that subset is of one class in other words they are pure or till the leaf node contains minimum samples required to split  
+- max_features: Number of attributes to consider while calculating the information gain on the given subset of data
+
 
 
 
@@ -90,3 +99,4 @@ Where, column represented by predicted class and row is the true class
 - Rish, Irina. "An empirical study of the naive Bayes classifier." IJCAI 2001 workshop on empirical methods in artificial intelligence. Vol. 3. No. 22. 2001.
 - Utgoff, Paul E. "ID5: an incremental ID3." Machine Learning Proceedings 1988. Morgan Kaufmann, 1988. 107-120.
 - Fan, Jerome, Suneel Upadhye, and Andrew Worster. "Understanding receiver operating characteristic (ROC) curves." Canadian Journal of Emergency Medicine 8.1 (2006): 19-20.
+- Grau, Sergio, et al. "Dialogue act classification using a Bayesian approach." 9th Conference Speech and Computer. 2004.
