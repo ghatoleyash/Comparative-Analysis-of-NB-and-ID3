@@ -47,22 +47,22 @@ The parameters given below helps algorithm to reduce the problem of overfitting 
 
 
 ## Data Preprocessing & Feature Selection
-The data preprocessing can often have a significant impact on generalization performance of a supervised ML algorithm. The elimination of noise instances is one of the most difficult problems in inductive ML. The symbolic, logical learning algorithms are able to process symbolic, categorical data only. However, real-world problems involve both symbolic and numerical features. Therefore, there is an important issue to discretize numerical (continuous) features. Grouping of values of symbolic features is also a useful process. It is a known problem that features with too many values are overestimated in the process of selecting the most informative features, both for inducing decision trees and for deriving decision rules. Moreover, in real-world data, the representation of data often uses too many features, but only a few of them may be related to the target concept. There may be redundancy, where certain features are correlated so that is not necessary to include all of them in modeling; and interdependence, where two or more features between them convey important information that is obscure if any of them is included on its own.
+The data preprocessing can often have a significant impact on generalization performance of a supervised Machine learning algorithm. The symbolic, logical learning algorithms are able to process symbolic, categorical data only. However, real-world problems involve both symbolic and numerical features. Therefore, there is an important issue to discretize numerical (continuous) features. Grouping of values of symbolic features is also a useful process. It is a known problem that features with too many values are overestimated in the process of selecting the most informative features, both for inducing decision trees and for deriving decision rules. There may be redundancy, where certain features are correlated so that is not necessary to include all of them in modeling; and interdependence, where two or more features between them convey important information that is obscure if any of them is included on its own.
 #### Dataset
-The dataset used for training the algorithm is german credit fraud dataset which contains total 20 attributes. Attributes such as credit amount, debtors/guarantors, installment plans are included in the data, there are 13 categorical variable and remaining are continuous variables. No missing values are existing in the data hence, the algorithms take only categorical variable as inputs we have processed the continuous columns into categorical by dividing them into the range of values.
+The dataset used for training the algorithm is german credit fraud dataset which contains total 20 attributes. Attributes such as credit amount, debtors/guarantors, installment plans are included in the data, there are 13 categorical variable and remaining are continuous variables. No missing values are existing in the data. Taking into consideration that the algorithms must be provided with categorical variable as inputs we have processed the continuous columns into categorical by dividing them into the range of values.
 #### Pre-processing
-Columns such as credit amount has been converted into the nominal variable by using the statistical inference. Finding out the distribution of credit amount and since it came out to be positively skewed log transformation has applied to make it more alike normal distribution. Lastly, the variable is segregated into three types low, medium and high by defining credit amount less than (mean-stdev) as low, with amount between 1 standard deviation as medium, and credit amount being greater than 1 standard deviation as high.
+Columns such as credit amount has been converted into the nominal variable by using the statistical inference. Finding out the distribution of credit amount and since it came out to be positively skewed, log transformation has applied to make it more alike normal distribution. Lastly, the variable is segregated into three types low, medium and high by defining credit amount less than (mean-stdev) as low, with amount between 1 standard deviation as medium, and credit amount being greater than 1 standard deviation as high.
 Moreover, the labelencoding is performed to receive the integer forms of categorical variable which can be given as an input to both the algorithms. 
 #### Feature Selection
 Selecting the relevant categorical features can be done using the chi-square test of independence. The test is performed on dependent (class) and independent (attribute) variable, wherein the contingency table is drawn using both of the variables, which includes total count of instances involved in subsequent categories. The reference contingency table can be show below:
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/contingency_table.png></div>
 Where, map category corresponds to categories in independent variable, and reference category is the dependent variable.
 
-Using the table, chi-square value is calculated with the help of observed and expected outcome and can be given as:
+Using the table, chi-square value is calculated with the help of observed and expected outcome and given by the formula below:
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/chi_square_formula.jpg></div>
 Where, Oi is the observed outcome and Ei is the expected value, i is the segment for each of the cell in contingency table.
 
-The chi-square value obtained and using the degree of freedom, p-value is received which further can be compared with the significance value. If the p-value is greater than significance level then there exist no relation between dependent and independent variable, where the variable can be removed else, we have to keep the variable.  
+The chi-square value obtained along with the degree of freedom p-value is received, which further can be compared with the significance value. If the p-value is greater than significance level then there exist no relation between dependent and independent variable, where the variable can be removed. Otherwise, we have to involve the variable for further training the model.  
 
 
 ## Experimental Results
@@ -87,7 +87,7 @@ Confusion matrix for Naive Bayes
  Fraud | 24 | 26
 
 Confusion matrix for ID3
-Where, column represented by predicted class and row is the true class
+Where, column represented by predicted class and row by the true class
 
 
 - accuracy of Naive Bayes and ID3 is 78% and 67.5% respectively
