@@ -18,6 +18,10 @@ Where, n represents maximum number of features (30), P(ci | fk) is probability o
 The classifier performs the binary classification based on Bayesian classification rule.
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/class_probability.png></div>
 Ci is the target class for classification where C1 is the negative class (non fraud cases) and C2 is the positive class (fraud cases).
+#### Parameters to tune
+- Laplace Smoothing
+<div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/laplace_smoothing_formula.png></div>
+
 
 
 ## Decision Tree
