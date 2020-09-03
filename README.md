@@ -48,4 +48,22 @@ The chi-square value obtained and using the degree of freedom, p-value is receiv
 
 
 ## Experimental Results
+In this section, we analyze the results obtained through the experiment performed on test set.
+<div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/roc.png></div>
+- area under curve for Naive Bayes is 76.5%
+- area under curve for ID3 is 76.5%
+
+confusion_matrix for both 
+      | Predicted class
+--------------------------
+ | Non-fraud | Fraud
+------|-------|-----------
+True class| Non-fraud | 118 | 0
+| Fraud | 64 | 7616
+| Batch Normalization | 64 | 256
+| Output Layer | 118 | 7670
+
+- accuracy of Naive Bayes and ID3 is 
+- True negative rate for Naive Bayes and ID3 is 
+
 
