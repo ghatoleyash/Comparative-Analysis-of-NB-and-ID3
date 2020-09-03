@@ -28,7 +28,7 @@ Where, k is the laplace smoothing, |X| is the total number of classes, c(x,y) is
 
 ## Decision Tree
 Decision tree learning is a supervised machine learning technique for inducing a decision tree from training data. A decision tree is a predictive model which is a mapping from observations about an item to conclusions about its target value. In the tree structures, leaves represent classifications, nonleaf nodes are features, and branches represent conjunctions of features that lead to the classifications. 
-Iterative Dichotomiser 3 is the implementation based on the concept of Decision tree. As the name suggests he algorithm iteratively performs analysis on the features/ attributes and divides (dichotomizes) into two or more group. It performs the greedy approach by creating tree using the top-down approach. ID3 does this so by aplying the concept of entropy and information gain which can be described as:
+Iterative Dichotomiser 3 is the implementation based on the concept of decision tree. As the name suggests he algorithm iteratively performs analysis on the features/ attributes and divides (dichotomizes) into two or more group. It performs the greedy approach by creating tree using the top-down approach. ID3 does this so by aplying the concept of entropy and information gain which can be described as:
 - Entropy: It measures the amount of uncertainity in the dataset and can be calculated using the formula,
 <div align=center><img src=https://github.com/ghatoleyash/Comparative-Analysis-of-NB-and-ID3/blob/master/entropy_formula.png></div>
 Where, S is the current dataset changes with every iteration to the subset of previous data, c is the set of classes is S, Pi is the probability of being class c with total classes present in S. 
