@@ -76,4 +76,5 @@ Where, column represented by predicted class and row is the true class
 - accuracy of Naive Bayes and ID3 is 78% and 67.5% respectively
 - True negative rate for Naive Bayes and ID3 is 68% and 52% respectively
 
-
+## References
+- 
