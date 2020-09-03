@@ -54,8 +54,8 @@ In this section, we analyze the results obtained through the experiment performe
 - area under curve for ID3 is 76.5%
 
 confusion_matrix for both 
-- | Non-fraud | Fraud
-------|-------|-----------
+~ | Non-fraud | Fraud
+------|-------|-----
  Non-fraud | 118 | 0
  Fraud | 64 | 7616
 
